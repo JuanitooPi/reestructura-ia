@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReestructuraIA · Caja</title>
+  <meta name="description" content="Asistente de refinanciamiento y reprogramación de créditos con IA para cajas municipales.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23165a5a'/%3E%3Cpath d='M9 21V11h7a4 4 0 0 1 0 8h-3l6 5' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="side" aria-label="Navegación principal">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7"/><path d="M9 21V11h7a4 4 0 0 1 0 8h-3l6 5"/></svg>
+        </span>
+        <span class="brand-text"><strong>ReestructuraIA</strong><small>Caja Municipal · Demo</small></span>
+      </a>
+      <nav class="nav">
+        <a href="#/" data-nav="panel"><i data-icon="panel"></i><span>Cartera</span></a>
+        <a href="#/solicitudes" data-nav="solicitudes"><i data-icon="file"></i><span>Solicitudes</span></a>
+        <a href="#/comite" data-nav="comite"><i data-icon="scale"></i><span>Comité</span><b class="count" id="nav-comite" hidden></b></a>
+        <a href="#/seguimiento" data-nav="seguimiento"><i data-icon="trend"></i><span>Seguimiento</span></a>
+      </nav>
+      <div class="side-foot">
+        <label for="rol" class="side-label">Sesión simulada</label>
+        <select id="rol" class="role-select"></select>
+        <p class="ia-status" id="ia-status"></p>
+      </div>
+    </aside>
+    <main id="app" class="main" tabindex="-1" aria-live="polite"></main>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
