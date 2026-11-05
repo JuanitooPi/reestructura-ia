@@ -17,7 +17,7 @@ Hoy el asesor evalúa cada caso en Excel y redacta a mano el informe para el com
 | Frontend | HTML + CSS + JavaScript (módulos ES), sin framework |
 | Backend | Node.js 20 + Express (desplegado en **Render**) |
 | Base de datos | **Supabase** (PostgreSQL + Row Level Security) |
-| IA | **Google Gemini** (`gemini-2.5-flash`) vía API REST, con respaldo por reglas |
+| IA | **Google Gemini** (`gemini-3.8-flash`) vía API REST, con respaldo por reglas |
 
 ```
 Navegador ──► Express (Render) ──► Supabase (clientes, créditos, solicitudes, seguimiento)
